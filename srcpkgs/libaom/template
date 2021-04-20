@@ -1,6 +1,6 @@
 # Template file for 'libaom'
 pkgname=libaom
-version=2.0.1
+version=3.0.0
 revision=1
 create_wrksrc=yes
 build_style=cmake
@@ -12,7 +12,7 @@ license="BSD-2-Clause"
 homepage="https://aomedia.org/"
 changelog="https://aomedia.googlesource.com/aom/+/master/CHANGELOG"
 distfiles="https://aomedia.googlesource.com/aom/+archive/v${version}.tar.gz"
-checksum=@b89acd3304531a9f6c99eba13e1de66605893ff8d08abc8c6e0586481a90033a
+checksum=@fbf0358c28df8726c17f6bd1a2ee0f2131fdc79f13ff0c91755a056dd992ed3e
 
 # aom segfaults with default musl stack size
 LDFLAGS="-Wl,-z,stack-size=2097152"
